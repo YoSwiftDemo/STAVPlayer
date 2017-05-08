@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "STAVPlayViewC.h"
+#import "STAVPlayView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    STAVPlayViewC *stAVPlayViewC = [[STAVPlayViewC alloc]initWithNibName:@"STAVPlayViewC"
+                                                                  bundle:nil];
+    [stAVPlayViewC stAVPlayView];
+    
+    [self.navigationController pushViewController:stAVPlayViewC animated:YES];
+    
 }
 
 

@@ -15,6 +15,10 @@
 		9E5A78521EBEF531007D81A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5A78501EBEF531007D81A4 /* LaunchScreen.storyboard */; };
 		9E5A785D1EBEF531007D81A4 /* STAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A785C1EBEF531007D81A4 /* STAVPlayerTests.m */; };
 		9E5A78681EBEF531007D81A4 /* STAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A78671EBEF531007D81A4 /* STAVPlayerUITests.m */; };
+		9E5A787B1EBEF81B007D81A4 /* STAVPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A787A1EBEF81B007D81A4 /* STAVPlayView.m */; };
+		9E5A787D1EBEF82D007D81A4 /* STAVPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5A787C1EBEF82D007D81A4 /* STAVPlayView.xib */; };
+		9E5A78811EBEF844007D81A4 /* STAVPlayViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A787F1EBEF844007D81A4 /* STAVPlayViewC.m */; };
+		9E5A78821EBEF844007D81A4 /* STAVPlayViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5A78801EBEF844007D81A4 /* STAVPlayViewC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		9E5A78631EBEF531007D81A4 /* STAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5A78671EBEF531007D81A4 /* STAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAVPlayerUITests.m; sourceTree = "<group>"; };
 		9E5A78691EBEF531007D81A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E5A78791EBEF81B007D81A4 /* STAVPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAVPlayView.h; sourceTree = "<group>"; };
+		9E5A787A1EBEF81B007D81A4 /* STAVPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAVPlayView.m; sourceTree = "<group>"; };
+		9E5A787C1EBEF82D007D81A4 /* STAVPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAVPlayView.xib; sourceTree = "<group>"; };
+		9E5A787E1EBEF844007D81A4 /* STAVPlayViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAVPlayViewC.h; sourceTree = "<group>"; };
+		9E5A787F1EBEF844007D81A4 /* STAVPlayViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAVPlayViewC.m; sourceTree = "<group>"; };
+		9E5A78801EBEF844007D81A4 /* STAVPlayViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAVPlayViewC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		9E5A78411EBEF530007D81A4 /* STAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E5A78751EBEF667007D81A4 /* STAVPlayKit */,
 				9E5A78451EBEF530007D81A4 /* AppDelegate.h */,
 				9E5A78461EBEF530007D81A4 /* AppDelegate.m */,
 				9E5A78481EBEF530007D81A4 /* ViewController.h */,
@@ -138,6 +149,43 @@
 				9E5A78691EBEF531007D81A4 /* Info.plist */,
 			);
 			path = STAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+		9E5A78751EBEF667007D81A4 /* STAVPlayKit */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A78761EBEF7E5007D81A4 /* STAVPlayUI */,
+			);
+			path = STAVPlayKit;
+			sourceTree = "<group>";
+		};
+		9E5A78761EBEF7E5007D81A4 /* STAVPlayUI */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A78781EBEF809007D81A4 /* STAVPlayView */,
+				9E5A78771EBEF7F3007D81A4 /* STAVPlayViewC */,
+			);
+			path = STAVPlayUI;
+			sourceTree = "<group>";
+		};
+		9E5A78771EBEF7F3007D81A4 /* STAVPlayViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A787E1EBEF844007D81A4 /* STAVPlayViewC.h */,
+				9E5A787F1EBEF844007D81A4 /* STAVPlayViewC.m */,
+				9E5A78801EBEF844007D81A4 /* STAVPlayViewC.xib */,
+			);
+			path = STAVPlayViewC;
+			sourceTree = "<group>";
+		};
+		9E5A78781EBEF809007D81A4 /* STAVPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A78791EBEF81B007D81A4 /* STAVPlayView.h */,
+				9E5A787A1EBEF81B007D81A4 /* STAVPlayView.m */,
+				9E5A787C1EBEF82D007D81A4 /* STAVPlayView.xib */,
+			);
+			path = STAVPlayView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5A787D1EBEF82D007D81A4 /* STAVPlayView.xib in Resources */,
 				9E5A78521EBEF531007D81A4 /* LaunchScreen.storyboard in Resources */,
 				9E5A784F1EBEF531007D81A4 /* Assets.xcassets in Resources */,
+				9E5A78821EBEF844007D81A4 /* STAVPlayViewC.xib in Resources */,
 				9E5A784D1EBEF531007D81A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5A78811EBEF844007D81A4 /* STAVPlayViewC.m in Sources */,
+				9E5A787B1EBEF81B007D81A4 /* STAVPlayView.m in Sources */,
 				9E5A784A1EBEF530007D81A4 /* ViewController.m in Sources */,
 				9E5A78471EBEF530007D81A4 /* AppDelegate.m in Sources */,
 				9E5A78441EBEF530007D81A4 /* main.m in Sources */,
@@ -425,10 +477,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = STAVPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = STeam.STAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.STKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -437,10 +490,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = STAVPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = STeam.STAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.STKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
